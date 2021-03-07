@@ -399,7 +399,7 @@ class Amazons {
             let counter: number = 0;
             for (let j: number = 0; j < fen.split(' ')[0].split('/')[i].length; j++) {
                 if (isNaN(parseInt(fen.split(' ')[0].split('/')[i][j]))) {
-                    if (fen.split(' ')[0].split('/')[i][j] === 'r' || fen.split(' ')[0].split('/')[i][j] === 'b') {
+                    if (fen.split(' ')[0].split('/')[i][j] === 'r' || fen.split(' ')[0].split('/')[i][j] === 'b' || fen.split(' ')[0].split('/')[i][j] === 'x') {
                         counter += 1;
                     } else {
                         return false;
