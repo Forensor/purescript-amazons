@@ -44,7 +44,7 @@
 1. It's a strongly-typed functional programming language with powerful tools very similar to [Haskell](https://www.haskell.org/) (algebraic data types, pattern matching, higher kinded types, typeclasses...).
 2. It compiles to JavaScript, one of the most popular languages used (see [GitHut Stats](https://madnight.github.io/githut)).
 
-There is also an unmaintained pre-release version done with TypeScript [here](legacy).
+There is also an unmaintained pre-release version done with TypeScript [here](https://github.com/Forensor/purescript-amazons/releases/tag/v0.1.5-alpha).
 
 <p align="right"><a href="#top">back to top</a></p>
 
