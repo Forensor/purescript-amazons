@@ -17,8 +17,6 @@
     <a href="/documentation"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/forensor/amazons">Try it online!</a>
-    ·
     <a href="https://github.com/Forensor/purescript-amazons/issues">Report Bug</a>
     ·
     <a href="https://github.com/Forensor/purescript-amazons/issues">Request Feature</a>
