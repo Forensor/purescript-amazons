@@ -15,9 +15,9 @@
     <br />
     <a href="https://github.com/forensor/amazons">Try it online!</a>
     ·
-    <a href="https://github.com/forensor/amazons/issues">Report Bug</a>
+    <a href="https://github.com/Forensor/purescript-amazons/issues">Report Bug</a>
     ·
-    <a href="https://github.com/forensor/amazons/issues">Request Feature</a>
+    <a href="https://github.com/Forensor/purescript-amazons/issues">Request Feature</a>
   </p>
 </div>
 
@@ -76,7 +76,7 @@ Complete quickstart guide available [here](https://github.com/purescript/documen
 
 ### Installation
 
-GAPE is not released yet, but you can clone/fork the project to test it. Go to *[Contributing](#contributing)* for more info
+GAPE is not released yet, but you can clone/fork the project to test it. Go to *[this guide](https://github.com/Forensor/purescript-amazons/tree/master/documentation#coding)* for more info
 
 <p align="right"><a href="#top">back to top</a></p>
 
@@ -148,7 +148,7 @@ Game ended. Black lost!
 - [ ] Discuss new names for functions/values
 - [ ] Refactor `case of case of ...` nests
 
-See the [open issues](issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Forensor/purescript-amazons/issues) for a full list of proposed features (and known issues).
 
 <p align="right"><a href="#top">back to top</a></p>
 
