@@ -1,0 +1,3 @@
+1. g1g9/d9 d10i5/i4 2. d1d4/h4 j7f3/e3 3. a4d7/f9 g10h9/c4 4. g9g3/g2 a7c7/c8 5. d4d3/e2 f3g4/g7 6. d3b3/b8 c7d6/b4 7. g3f4/g3 h9d5/g5 8. j4j7/i6 i5h6/i7 9. j7h9/h7 d5g8/i8 10. b3d1/d4 h6j4/g1 11. h9g9/h9 d6c6/c7 12. d7d5/b5 g4f5/g4 13. f4e5/e4 g8e6/d6 14. g9e7/f7 c6a6/c6 15. d1a4/a1
+
+1. d1i6/i7 d10h6/h7 2. g1g8/i8 g10b5/h5 3. i6i1/c7 b5f1/f4 4. g8g7/g6 f1f3/f1 5. j4g4/g5 a7c5/f5 6. g7e7/g7 j7j9/j2 7. a4b3/h9 f3e2/f3 8. b3d3/e3 c5c4/d4 9. e7e6/c6 e2b2/c3 10. d3c2/b3 c4c5/e7 11. e6b9/b6 c5d5/d9 12. b9d7/e6 j9j10/d10 13. d7g10/d7j10h8/d8 14. c2d3/a6 h6i5/i2 15. g4i4/h4 h8g9/h10
