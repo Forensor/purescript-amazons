@@ -1,3 +1,7 @@
+[![LICENSE](https://img.shields.io/github/license/forensor/purescript-amazons)](https://img.shields.io/github/license/forensor/purescript-amazons)
+[![Issues](https://img.shields.io/github/issues/Forensor/purescript-amazons)](https://img.shields.io/github/issues/Forensor/purescript-amazons)
+[![Version](https://img.shields.io/badge/version-1.0.0--beta.1-blue)](https://img.shields.io/badge/version-1.0.0--beta.1-blue)
+[![Purs](https://img.shields.io/badge/purs-0.14.5-lightgrey)](https://img.shields.io/badge/purs-0.14.5-lightgrey)
 <div id="top"></div>
 <br />
 <div align="center">
