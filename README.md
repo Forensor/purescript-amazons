@@ -39,14 +39,14 @@
 
 ## About The Project and The Game
 
-[The Game of the Amazons](https://en.wikipedia.org/wiki/Game_of_the_Amazons) (*El Juego de las Amazonas*) was invented in 1988 by Walter Zamkauskas of Argentina, and first published (in Spanish) in issue number 4 of the puzzle magazine *El Acertijo* in December of 1992. It is a game of territorial strategy, in which both players compete to leave their opponent's pieces without movements. Its rules are simple, but mastering the game takes a lifetime.
+Walter Zamkauskas of Argentina devised [The Game of the Amazons](https://en.wikipedia.org/wiki/Game_of_the_Amazons) (*El Juego de las Amazonas*) in 1988, and it was first published (in Spanish) in issue number 4 of the puzzle magazine *El Acertijo* in December 1992. It's a territorial strategy game in which both players try to keep their opponent's pieces from moving. Although the game's principles are basic, mastering it takes a lifetime.
 
-**The Game of the Amazons PureScript Engine** (GAPE) is a project that aims to bring more people to appreciate the beauty of this wonderful game and allow them to contribute in a coordinate manner. That's why we believe that [PureScript](https://www.purescript.org/) is the right language for two main reasons:
+**The Game of the Amazons PureScript Engine** (GAPE) is a project that intends to increase the number of individuals who appreciate the beauty of this magnificent game while also allowing them to contribute in a coordinated manner. That is why, for two key reasons, we believe [PureScript](https://www.purescript.org/) is the right language:
 
-1. It's a strongly-typed functional programming language with powerful tools very similar to [Haskell](https://www.haskell.org/) (algebraic data types, pattern matching, higher kinded types, typeclasses...).
-2. It compiles to JavaScript, one of the most popular languages used (see [GitHut Stats](https://madnight.github.io/githut)).
+1. It's a [Haskell](https://www.haskell.org/)-like strongly-typed functional programming language with excellent features (algebraic data types, pattern matching, higher kinded types, typeclasses...).
+2. It compiles to JavaScript, one of the most widely used programming languages (see [GitHut Stats](https://madnight.github.io/githut)).
 
-There is also an unmaintained pre-release version done with TypeScript [here](https://github.com/Forensor/purescript-amazons/releases/tag/v0.1.5-alpha).
+There's also an unmaintained TypeScript-based pre-release version [here](https://github.com/Forensor/purescript-amazons/releases/tag/v0.1.5-alpha).
 
 <p align="right"><a href="#top">back to top</a></p>
 
