@@ -135,7 +135,9 @@ Output:
 +---------------------+
   a b c d e f g h i j
 Game ended. Black lost!
-1. g1g3/e5 d10d3/i8 2. g3f4/d2 g10h10/h4 3. f4d4/g1 d3f1/f5 4. j4i5/i1 j7f3/b7 5. d4e3/g5 f3e4/f4 6. d1i6/h5 f1b1/d3 7. i6c6/b6 ...
+1. g1g3/e5 d10d3/i8 2. g3f4/d2 g10h10/h4 3. f4d4/g1 d3f1/f5 
+4. j4i5/i1 j7f3/b7  5. d4e3/g5 f3e4/f4   6. d1i6/h5 f1b1/d3 
+7. i6c6/b6 ...
 -}
 ```
 
