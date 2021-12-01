@@ -89,13 +89,13 @@ GAPE is not released yet, but you can clone/fork the project to test it. Go to *
 Here's a simple example of a random game generator:
 
 ```haskell
+module Main where
+
 import Effect
 import Effect.Console (log)
 import Effect.Random (randomInt)
 import Prelude
-
 import Amazons
-
 import Data.Array (index, length)
 import Data.Maybe (Maybe(..))
 
@@ -109,9 +109,9 @@ match amzns =
     i <- randomInt 0 (length movs - 1)
     case index movs i of
       Just san -> match $ move amzns san
-      Nothing  -> log $ "Invalid movement."
+      Nothing -> log $ "Invalid movement."
   where
-    movs = legalMoves amzns
+  movs = legalMoves amzns
 
 main :: Effect Unit
 main = match amazons
