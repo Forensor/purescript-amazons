@@ -176,7 +176,7 @@ GAPE is distributed under the BSD 2-Clause License. See [LICENSE](LICENSE) for m
 
 ## Contact
 
-For inquires about bugs or new feature requests go to [contributor's guide](guide). For everything else feel free to DM or send an email! 🙂
+For inquires about bugs or new feature requests go to [contributor's guide](https://github.com/Forensor/purescript-amazons/tree/master/documentation#contributing). For everything else feel free to DM or send an email! 🙂
 
 Álvaro Sánchez - [@Forensor](https://twitter.com/forensor) - forensor@hotmail.com
 
