@@ -99,11 +99,11 @@ import Amazons
 import Data.Array (index, length)
 import Data.Maybe (Maybe(..))
 
-match :: Amazons -> Effect Unit
+match :: Game -> Effect Unit
 match amzns =
   if ended amzns then do
     log $ ascii amzns
-    log $ "Game ended. " <> (show $ gTurn amzns) <> " lost!"
+    log $ "Game ended. " <> (show $ turn amzns) <> " lost!"
     log $ pgn amzns
   else do
     i <- randomInt 0 (length movs - 1)
@@ -147,7 +147,7 @@ Game ended. Black lost!
 
 ## Roadmap
 
-- [ ] Refactor piece movement functions
+- [x] Refactor piece movement functions
 - [ ] Testing with purescript-quickcheck
 - [ ] Discuss new names for functions/values
 - [ ] Refactor `case of case of ...` nests
