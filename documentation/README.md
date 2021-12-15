@@ -85,17 +85,6 @@ Each pointed data represents the following: empty subsequent squares in a same r
 
 This section contains the info of all the library functions and its dependencies. A more visual user-friendly model can be found [here](linktothat).
 
-<a id="field"></a>
-
-### field :: Int -> String -> Maybe String
-
-Takes the **field** to be retrieved and a **FEN** and returns its correspondent **field** if it's correct.
-
-```haskell
-field 0 initFen
--- ↳ Just "3b2b3/10/10/b8b/10/10/w8w/10/10/3w2w3"
-```
-
 <a id="fen"></a>
 
 ### fen :: Amazons -> Fen
