@@ -1,8 +1,7 @@
 { name = "amazons"
 , dependencies =
-  [ "arrays"
-  , "assert"
-  , "console"
+  [ "aff"
+  , "arrays"
   , "effect"
   , "foldable-traversable"
   , "integers"
@@ -11,6 +10,7 @@
   , "prelude"
   , "psci-support"
   , "quickcheck"
+  , "spec"
   , "strings"
   , "tuples"
   , "versions"
