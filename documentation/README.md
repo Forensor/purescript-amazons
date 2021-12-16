@@ -75,7 +75,7 @@ type Fen = String
 
 <p align="center"><img src="media/fen.png"></p>
 
-Each pointed data represents the following: empty subsequent squares in a same rank<sup>(1)</sup>, rank delimitator<sup>(2)</sup>, amazons ((w)hite and (b)lack)<sup>(3)</sup>, fire<sup>(4)</sup>, side to play<sup>(5)</sup> and move number<sup>(6)</sup>. The above FEN will look exactly like the diagram shown in the [start of this section](#data).
+Each pointed data represents the following: empty subsequent squares in a same rank<sup>(1)</sup>, rank delimiter<sup>(2)</sup>, amazons ((w)hite and (b)lack)<sup>(3)</sup>, fire<sup>(4)</sup>, side to play<sup>(5)</sup> and move number<sup>(6)</sup>. The above FEN will look exactly like the diagram shown in the [start of this section](#data).
 
 <p align="right"><a href="#top">back to top</a></p>
 
@@ -87,7 +87,7 @@ This section contains the info of all the library functions and its dependencies
 
 <a id="fen"></a>
 
-### fen :: Amazons -> Fen
+### fen :: Game -> Fen
 
 Takes a **game** and returns the **FEN** of the current position.
 
@@ -98,7 +98,7 @@ fen amazons
 
 <a id="clear"></a>
 
-### clear :: Amazons
+### clear :: Game
 
 Returns a **game model with an empty board**.
 
@@ -111,7 +111,7 @@ clear
 
 <a id="ended"></a>
 
-### ended :: Amazons -> Boolean
+### ended :: Game -> Boolean
 
 Takes a **game** and **checks if it's over**.
 
@@ -124,7 +124,7 @@ ended (load "wwwwbbbbx1/xxxxxxxxx1/10/10/10/10/10/10/10/10 w 23")
 
 <a id="getSqr"></a>
 
-### getSqr :: Amazons -> Int -> Int -> Maybe Square
+### getSqr :: Game -> Int -> Int -> Maybe Square
 
 Takes a **game** a **row index** and a **column index** and **returns the square** if the coordinates are correct.
 
@@ -135,7 +135,7 @@ getSqr amazons 0 0
 
 <a id="legalMoves"></a>
 
-### legalMoves :: Amazons -> Array San
+### legalMoves :: Game -> Array San
 
 Takes a **game** and returns the **legal moves** of the current position.
 
@@ -148,7 +148,7 @@ legalMoves (load "w1x7/2x7/xxx7/10/10/10/10/10/10/10 w 1")
 
 <a id="remove"></a>
 
-### remove :: Amazons -> String -> Amazons
+### remove :: Game -> San -> Game
 
 Takes a **game** and a **coordinate** to remove the piece placed and **returns the new game**. If the coordinate is not valid, the original game is returned instead.
 
@@ -161,7 +161,7 @@ remove amazons "d10"
 
 <a id="amazons"></a>
 
-### amazons :: Amazons
+### amazons :: Game
 
 Returns the **initial state** of an Amazons game.
 
@@ -174,7 +174,7 @@ amazons
 
 <a id="ascii"></a>
 
-### ascii :: Amazons -> String
+### ascii :: Game -> String
 
 Takes a **game** and returns an **ASCII representation** of the current position.
 
@@ -200,11 +200,11 @@ ascii amazons
 
 <a id="moveNumber"></a>
 
-### moveNumber :: Amazons -> Int
+### moveNumber :: Game -> Int
 
 Takes a **game** and **returns the move number**.
 
-<sub><sup>*See: [fen](#fen)</sup></sub>.
+<sub><sup>*See: [fen](#fen)*</sup></sub>.
 
 ```haskell
 rdIsDig initFen
@@ -213,7 +213,7 @@ rdIsDig initFen
 
 <a id="turn"></a>
 
-### turn :: Amazons -> Team
+### turn :: Game -> Team
 
 Takes a **game** and returns the **current turn**.
 
@@ -226,7 +226,7 @@ turn amazons
 
 <a id="get"></a>
 
-### get :: Amazons -> String -> Maybe Square
+### get :: Game -> San -> Maybe Square
 
 Takes a **game** and **a coordinate** and **returns the square that occupies it**.
 
@@ -242,11 +242,11 @@ get amazons "a420"
 
 <a id="load"></a>
 
-### load :: String -> Amazons
+### load :: Fen -> Amazons
 
 Takes a **FEN** and it **converts it** into an `Amazons` model. If the FEN is incorrect, the [initFen](#initFen) is used instead. (*This only loads a static game without movements. If you want to load a match with moves already done see: [loadPgn](#loadPgn).*)
 
-<sub><sup>*See: [parse](#parse)</sup></sub>.
+<sub><sup>*See: [parse](#parse)*</sup></sub>.
 
 ```haskell
 load "3b2b3/3w6/10/bx7b/10/xxx7/w8w/xxx2xxx2/10/6w3 w 10"
@@ -284,11 +284,11 @@ parse "3b2b3/3w6/10/b what the hell is this monstrosity 0/xxx7/w8w/xxx2xxx2/10/6
 
 <a id="movesOfSqr"></a>
 
-### movesOfSqr :: Amazons -> Int -> Int -> Array San
+### movesOfSqr :: Game -> Int -> Int -> Array San
 
 Takes a **game**, a **row index** and a **column index** and returns the **legal moves** of it.
 
-<sub><sup>*See: [getSqr](#getSqr), [turn](#turn)</sup></sub>.
+<sub><sup>*See: [getSqr](#getSqr), [turn](#turn)*</sup></sub>.
 
 ```haskell
 movesOfSqr amazons 9 3
@@ -297,11 +297,11 @@ movesOfSqr amazons 9 3
 
 <a id="pgn"></a>
 
-### pgn :: Amazons -> Pgn
+### pgn :: Game -> String
 
 Takes a **game** and **returns its PGN**.
 
-<sub><sup>*See: [moveNumber](#moveNumber)</sup></sub>.
+<sub><sup>*See: [moveNumber](#moveNumber)*</sup></sub>.
 
 ```haskell
 pgn (move amazons "d1d2/c3")
@@ -310,7 +310,7 @@ pgn (move amazons "d1d2/c3")
 
 <a id="put"></a>
 
-### put :: Amazons -> Square -> String -> Amazons
+### put :: Game -> Square -> San -> Game
 
 Takes a **game**, a **square**, and a **coordinate** and **returns the new game**. If the coordinate is not valid, the original game is returned instead.
 
@@ -321,11 +321,11 @@ put amazons Fire "a10"
 
 <a id="takeback"></a>
 
-### takeback :: Amazons -> Amazons
+### takeback :: Game -> Game
 
 Takes a **game** and **undoes its last move**. If no moves were done in the match, it remains the same.
 
-<sub><sup>*See: [fen](#fen)</sup></sub>.
+<sub><sup>*See: [fen](#fen)*</sup></sub>.
 
 ```haskell
 gHist (takeback (move amazons "d1d2/c3"))
@@ -334,7 +334,7 @@ gHist (takeback (move amazons "d1d2/c3"))
 
 <a id="validFen"></a>
 
-### validFen :: String -> Boolean
+### validFen :: Fen -> Boolean
 
 Takes a **FEN** and **checks if it's valid**.
 
@@ -348,11 +348,11 @@ validFen "Otters are cute"
 
 <a id="move"></a>
 
-### move :: Amazons -> String -> Amazons
+### move :: Game -> San -> Game
 
 Takes a **game** and a **move** in SAN and **returns the new game**. If the move is not valid, the original game is returned instead.
 
-<sub><sup>*See: [moveNumber](#moveNumber), [get](#get), [turn](#turn), [remove](#remove), [put](#put), [movesOfSqr](#movesOfSqr)</sup></sub>.
+<sub><sup>*See: [moveNumber](#moveNumber), [get](#get), [turn](#turn), [remove](#remove), [put](#put), [movesOfSqr](#movesOfSqr)*</sup></sub>.
 
 ```haskell
 move amazons "d1d2/c3"
