@@ -96,6 +96,17 @@ fen amazons
 -- ↳ "3b2b3/10/10/b8b/10/10/w8w/10/10/3w2w3 w 1"
 ```
 
+<a id="initFen"></a>
+
+### initFen :: Fen
+
+The **starting position FEN**.
+
+```haskell
+initFen
+-- ↳ "3b2b3/10/10/..."
+```
+
 <a id="clear"></a>
 
 ### clear :: Game
