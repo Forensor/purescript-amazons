@@ -16,6 +16,7 @@ module Amazons
   , remove
   , turn
   , takeback
+  , initFen
   , validFen
   , parse
   , moveNumber
