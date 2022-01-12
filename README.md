@@ -149,7 +149,7 @@ Game ended. Black lost!
 
 - [x] Refactor piece movement functions
 - [ ] Testing with purescript-quickcheck
-- [ ] Discuss new names for functions/values
+- [x] Discuss new names for functions/values
 - [x] Refactor `case of case of ...` nests in move functions
 
 See the [open issues](https://github.com/Forensor/purescript-amazons/issues) for a full list of proposed features (and known issues).
