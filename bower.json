@@ -6,6 +6,10 @@
   ],
   "description": "A viewless library to control/validate matches of The Game of the Amazons.",
   "main": "Amazons.purs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forensor/purescript-amazons.git"
+  },
   "keywords": [
     "amazons",
     "chess",
