@@ -1,0 +1,23 @@
+{
+  "name": "purescript-amazons",
+  "homepage": "https://github.com/Forensor/purescript-amazons",
+  "authors": [
+    "Álvaro Sánchez <forensor@hotmail.com>"
+  ],
+  "description": "A viewless library to control/validate matches of The Game of the Amazons.",
+  "main": "Amazons.purs",
+  "keywords": [
+    "amazons",
+    "chess",
+    "strategy",
+    "engine"
+  ],
+  "license": "BSD-2-Clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
