@@ -78,7 +78,11 @@ Complete quickstart guide available [here](https://github.com/purescript/documen
 
 ### Installation
 
-GAPE is not released yet, but you can clone/fork the project to test it. Go to *[this guide](https://github.com/Forensor/purescript-amazons/tree/master/documentation#coding)* for more info
+Spago:
+
+```git
+spago install amazons
+```
 
 <p align="right"><a href="#top">back to top</a></p>
 
